@@ -41,16 +41,24 @@
  	padding: 0;
  }
 
+ul {
+   padding-left: 0;
+}
+
+li {
+   list-style: none;
+}
+
  .centered {
- 	text-align: center
+ 	text-align: center;
  }
 
  .mt {
- 	margin-top: 80px;
+ 	margin-top: 35px;
  }
 
  .mb {
- 	margin-bottom: 80px;
+ 	margin-bottom: 60px;
  }
 
 /* ==========================================================================
@@ -172,14 +180,20 @@
    	margin-left: 10px;
    }
 
-	 #footerwrap p a {
+	 #footerwrap p a,  #footerwrap li a {
    	color: #1abc9c;
    }
 	
-	 #footerwrap p a:hover {
+	 #footerwrap p a:hover,  #footerwrap li a:hover {
 	 	color:  #ffffff;
    	text-decoration: none;
    }
+
+    #footerwrap ul li {
+
+      display: inline-block;
+      padding: 0 30px;
+    }
 
    #workwrap {	
    	background: url(../img/work.jpg) no-repeat center top;
