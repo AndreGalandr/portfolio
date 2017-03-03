@@ -17,6 +17,8 @@
     
     <link href="css/font-awesome.min.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+		<script src="js/Chart.js"></script>
+
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -27,7 +29,7 @@
     <![endif]-->
   </head>
 
-  <body>A
+  <body>
 
     <!-- Static navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -43,7 +45,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
           </ul>
@@ -67,24 +69,22 @@
 	<section id="about"></section>
 	<div class="container">
 		<div class="row mt mb">
-			<div class="col-md-2 col-md-offset-1">
-				
-			</div>
-			<div class="col-md-6">
-				<h1>About me</h1>
-				<p>Всем привет! Меня зовут Андрей я Front-end developer. Сейчас я работаю  freelance web-developer.</p>
-				<h4>Моими ключевыми функциональными обязаностями является:</h4> 
+			<div class="col-md-8 text-justify col-md-offset-2">
+				<h1 class="text-center">About me</h1>
+				<p>Всем привет! Меня зовут Андрей, я специализируюсь на Front-end Web-разработке.</p>
+				<h4>Мои ключевые навыки:</h4> 
 				<ul>
-					<li>Верстка новых страниц из PSD макетов</li>
+					<li>Верстка страниц по PSD макетам</li>
 					<li>Поддержка существующих проектов</li>
 					<li>Адаптация новых и готовых страниц под мобильные устройства</li>
 					<li>Реализация JavaScript логики (слайдеры, анимации, и др.)</li>
-					<li>Разработка приложений с использованием фреймворка Angular.JS</li>
+					<li>Применение библиотек и шаблонов</li>
+					<li>Разработка приложений с использованием фреймворка Angular JS</li>
 					<li>Интеграция новых модулей в готовые проекты.</li>
 				</ul>
 				<h4>Коротко о себе:</h4>
 				<p>На данном этапе моей жизни главная моя задача и цель - это достижение вершин в Web-разработке.
-				Для этого я все время познаю новые технологии и тем самым улучшаю свои навыки и знания. 
+				Для этого я нахожусь в постоянном изучении новых технологий и тем самым улучшаю свои навыки и знания.
 				И конечно, немного о личных качествах:
 				Целеустремленность,
 				настойчивостъ,
@@ -92,13 +92,136 @@
 				коммуникабельность,
 				внимательность к деталям
 				</p>
-			</div>
-			<div class="col-md-3 mt">
 				<p><a href="#"><i class="icon-file"></i></a></p>
-				<a href="#"><sm>DOWNLOAD PDF</sm></a>
-			</div>	
+				<a href="#"><sm>DOWNLOAD CV PDF</sm></a>
+			</div>
 		</div><! --/row -->
 	</div><! --/container -->
+
+		<!--SKILLS DESCRIPTION -->
+	<div id="skillswrap">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1>Skills</h1>
+				</div>
+			</div>
+			<div class="row">
+					<div class="col-md-4 centered">
+						<canvas id="javascript" height="130" width="130"></canvas>
+						<p>Javascript</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 45,
+										color:"#1abc9c"
+									},
+									{
+										value : 55,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-md-4 centered">
+						<canvas id="bootstrap" height="130" width="130"></canvas>
+						<p>Bootstrap</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 60,
+										color:"#1abc9c"
+									},
+									{
+										value : 40,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-md-4 centered">
+						<canvas id="wordpress" height="130" width="130"></canvas>
+						<p>Angular JS</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 45,
+										color:"#1abc9c"
+									},
+									{
+										value : 55,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					
+					<div class="col-md-4 centered">
+						<canvas id="html" height="130" width="130"></canvas>
+						<p>HTML/CSS</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 80,
+										color:"#1abc9c"
+									},
+									{
+										value : 20,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-md-4 centered">
+						<canvas id="photoshop" height="130" width="130"></canvas>
+						<p>Photoshop</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 50,
+										color:"#1abc9c"
+									},
+									{
+										value : 50,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-md-4 centered">
+						<canvas id="illustrator" height="130" width="130"></canvas>
+						<p>jQuery</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 45,
+										color:"#1abc9c"
+									},
+									{
+										value : 55,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("illustrator").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+
+			</div><!--/.row -->
+			<br>
+		</div><!--/.container -->
+	</div><!--/ #skillswrap -->
 
 	<section id="portfolio"></section>
 	<div class="container">
@@ -134,7 +257,7 @@
 			<div class="row centered">
 				<div class="col-md-4">
 					<p>Phone</p>
-					<p><a href="tel:+380997150785"><i class="fa fa-phone"></i> +38(099)-715-07-85</a></p>
+					<p><a href="tel:+380997150785"><i class="fa fa-phone pr"></i> +38(099)-715-07-85</a></p>
 				</div>
 			
 				<div class="col-md-4">
@@ -148,7 +271,7 @@
 				</div>
 				<div class="col-md-4">
 					<p>E-mail</p>
-					<p><a href="mailto:evenlogiks@gmail.com"><i class="fa fa-envelope"></i> sevenlogiks@gmail.com</a></p>
+					<p><a href="mailto:evenlogiks@gmail.com"><i class="fa fa-envelope pr"></i> sevenlogiks@gmail.com</a></p>
 				</div>
 			</div>
 		</div>
@@ -158,7 +281,12 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/smoothscroll.js"></script> -->
+    <!-- <script src="js/Chart.js"></script> -->
+    
     <script src="js/bootstrap.min.js"></script>
+    
   </body>
 </html>
