@@ -57,11 +57,11 @@ li {
 
 .chart {
     display: inline-block;
-    height: 140px;
-    margin: 50px 0 30px;
+    height: 130px;
+    /* margin: 50px 0 30px; */
     position: relative;
     text-align: center;
-    width: 140px;
+    width: 130px;
  }
 
  .chart canvas {
@@ -73,7 +73,7 @@ li {
     display: inline-block;
     font-size: 25px;
     font-weight: 300;
-    line-height: 140px;
+    line-height: 130px;
     z-index: 2;
 }
 .percent:after {
@@ -179,6 +179,9 @@ li {
    	background-size: cover;
    }
 
+.gallery p {
+      margin-top: 20px;
+}
    #headerwrap h1 {
    	color:#ffffff;
    	padding-top: 10px;
@@ -311,9 +314,39 @@ li {
 }
 
 .fb {
-   margin-top: 40px;
+   margin-top: 37px;
+   padding-left: 15px;
 }
 
+.soc_p {
+   margin-bottom: 20px;
+}
+
+/* .ff {
+   margin-top: 45px;
+   margin-left: 65px;
+} */
+
+.form_em {
+   padding: 5px;
+   outline: none;
+}
+
+.form_btn {
+   background-color: transparent;
+   color: #1abc9c;
+   border: none;
+   outline: none;
+}
+
+.form_btn:hover {
+   color: #fff;
+}
+
+.form-control {
+   margin: 20px auto;
+   width: 70%;
+}
    /* Gallery */
    .gallery {
    	margin-top: 30px;
