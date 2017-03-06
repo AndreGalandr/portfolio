@@ -49,6 +49,42 @@ li {
    list-style: none;
 }
 
+ .ind,h4, li:first-child { 
+   text-indent: 1.5em;
+   }
+
+   /* Skills */
+
+.chart {
+    display: inline-block;
+    height: 140px;
+    margin: 50px 0 30px;
+    position: relative;
+    text-align: center;
+    width: 140px;
+ }
+
+ .chart canvas {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.percent {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 140px;
+    z-index: 2;
+}
+.percent:after {
+    content: "%";
+    font-size: 50%;
+    margin-left: 0.1em;
+}
+.hp {
+  margin-bottom: 30px; 
+}
+
  .centered {
  	text-align: center;
  }
@@ -195,7 +231,7 @@ li {
     #footerwrap ul li {
 
       display: inline-block;
-      padding: 0 15px;
+      padding: 0px 30px 0px 0px;
     }
 
    .fa {
@@ -274,6 +310,9 @@ li {
    margin-bottom: 50px;
 }
 
+.fb {
+   margin-top: 40px;
+}
 
    /* Gallery */
    .gallery {
