@@ -148,8 +148,8 @@ li {
 
    .navbar-default .navbar-nav > li > a {
    	color: #1abc9c;
-      padding: 0;
-      margin: 10px 15px;
+    /*   padding: 0;
+      margin: 10px 15px; */
    }
 
 /* ==========================================================================
@@ -234,7 +234,7 @@ li {
     #footerwrap ul li {
 
       display: inline-block;
-      padding: 0px 30px 0px 0px;
+      padding: 0px 26px 0px 0px;
     }
 
    .fa {
@@ -363,8 +363,21 @@ li {
    }
 }
 
+   @media only screen and (max-width : 780px) {
+   .navbar-default .navbar-brand {
+      margin: 0px 35px;
+   }
+}
+
    @media only screen and (max-width : 480px) {
    #headerwrap h1 {
       font-size: 60px;
    }
 }
+
+   @media only screen and (max-width: 767px) {
+   .navbar-default .navbar-collapse {
+       background: rgba(66, 102, 169, 0.49);
+       margin-top: 10px;
+   }
+
