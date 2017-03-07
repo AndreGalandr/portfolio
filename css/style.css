@@ -15,7 +15,6 @@
 
    @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-
    ::-moz-selection {
    	background: #f2c2c9;
    	color: #a4003a;
@@ -42,14 +41,14 @@
  }
 
 ul {
-   padding-left: 0;
+   /* padding-left: 0; */
 }
 
 li {
    list-style: none;
 }
 
- .ind,h4, li:first-child { 
+ .ind, h4 { 
    text-indent: 1.5em;
    }
 
@@ -63,7 +62,14 @@ li {
     text-align: center;
     width: 130px;
  }
-
+   #canvas .circle {
+         display: inline-block;
+         margin: 1em;
+      }
+      .circles-decimals {
+         font-size: .4em;
+      }
+      
  .chart canvas {
     left: 0;
     position: absolute;
@@ -361,12 +367,21 @@ li {
       float: left;
       margin-left: 15px;
    }
+
+   .navbar-default .navbar-brand {
+      margin: 0px 15%;
+   }
+
+     .navbar-default .navbar-nav > li > a {
+    line-height: 30px;
+   }
 }
 
-   @media only screen and (max-width : 780px) {
-   .navbar-default .navbar-brand {
-      margin: 0px 35px;
-   }
+   @media only screen and (max-width: 767px) {
+   .navbar-default .navbar-collapse {
+       background: rgba(66, 102, 169, 0.49);
+       margin-top: 10px;
+   }   
 }
 
    @media only screen and (max-width : 480px) {
@@ -375,9 +390,5 @@ li {
    }
 }
 
-   @media only screen and (max-width: 767px) {
-   .navbar-default .navbar-collapse {
-       background: rgba(66, 102, 169, 0.49);
-       margin-top: 10px;
-   }
+
 
