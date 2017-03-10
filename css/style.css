@@ -33,7 +33,11 @@ ul, ol {
    padding-left: 24px;
 }
 
+.img-responsive {
+   width: 100%;
+}
    /* Skills */
+
 
 .chart {
    display: inline-block;
@@ -309,9 +313,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fb {
-   margin-top: 30px;
+   margin-top: 40px;
    padding-left: 15px;
-   font-size: 24px;
+   font-size: 18px;
 }
 .mt25 {
    margin-top: 25px;
