@@ -30,15 +30,15 @@ li {
 }
 
 ul, ol {
-   padding-left: 24px;
+   padding-left: 0;
 }
 
 .img-responsive {
    width: 100%;
 }
+
+
    /* Skills */
-
-
 .chart {
    display: inline-block;
    height: 130px;
@@ -90,6 +90,10 @@ ul, ol {
 
 .mb {
    margin-bottom: 60px;
+}
+
+.canvas_p {
+   margin-top: 20px;
 }
 
 /* ==========================================================================
@@ -220,6 +224,10 @@ h1, h2, h3, h4, h5, h6 {
 #footerwrap .color_white {
    color: #f2f2f2;
 }
+
+#footerwrap .displ {
+      display: none;
+   }
 
 #footerwrap p a,  #footerwrap li a {
    color: #1abc9c;
@@ -359,6 +367,20 @@ h1, h2, h3, h4, h5, h6 {
    opacity: 0.4;
 }
 
+@media only screen and (max-width : 991px) {
+
+   #footerwrap .displ {
+      display: block;
+      font-size: 18px;
+   }
+
+   .displ_n {
+      display: none;
+   }
+
+
+}
+
 @media only screen and (max-width : 780px) {
 
    .navbar-toggle {
@@ -389,4 +411,9 @@ h1, h2, h3, h4, h5, h6 {
    #headerwrap h1 {
       font-size: 60px;
    }
+
+   .ind {
+      text-indent: 0;
+   }
+
 }
